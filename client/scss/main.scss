@@ -1,0 +1,35 @@
+@import "bourbon";
+@import "neat";
+
+// base
+@import './base/_reset.scss';
+@import './base/_variables.scss';
+@import './base/_mixins.scss';
+
+
+@font-face {
+    font-family: mainFont;
+    src: url(../fonts/Spinnaker-Regular.ttf);
+}
+
+body{
+	font-family: mainFont;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.button {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+
+// app
+@import '../app/home/home.scss';
+
