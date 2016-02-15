@@ -1,14 +1,6 @@
 <home>
-	<nav class="top-nav">
-		<span class="someText">With every product you purchase we will help a person in need</span>
-		<ul class="cart">
-			<li class="cart-icon"><a href="#"><img src="img/cart-icon.png" alt=""></a></li>
-			<li><a href="#">MY CART</a></li>
-			<li>0 ITEM(S)</li>
-			<li class="last">THB 0.00</li>
-		</ul>
-	</nav>
-
+	<top-nav></top-nav>
+	
 
 	<header class="main-header">
 		<nav class="main-nav">
@@ -64,7 +56,12 @@
 		<div class="join">
 			<input type="text">
 			<a href="#" class="button">join us</a>
+			<div class="hand">
+				<img src="img/mouse.png" alt="">
+				<span>Click here to be the first</span>
+			</div>
 		</div>
+
 	</header>
 
 
@@ -81,11 +78,55 @@
 		</div>
 	</div>
 
-	
+	<div class="store1">
+		<div class="torn"></div>
+		<img class="direction" src="img/direction.png" alt="">
+		<ul class="clothes">
+			<li>
+				<img src="img/IMG_7353.png" alt="">
+				<span></span>
+				<a href="#"></a>
+			</li>
+			<li>
+				<img src="img/IMG_7353.png" alt="">
+				<span></span>
+				<a href="#"></a>
+			</li>
+			<li>
+				<img src="img/IMG_7353.png" alt="">
+				<span></span>
+				<a href="#"></a>
+			</li>
+		</ul>
+	</div>
+
+<!-- 	<div class="store2">
+		<div class="torn" src="img/001.png" alt=""></div>
+		<img class="direction" src="" alt="">
+		<ul class="clothes">
+			<li>
+				<img src="" alt="">
+				<span></span>
+				<a href="#"></a>
+			</li>
+			<li>
+				<img src="" alt="">
+				<span></span>
+				<a href="#"></a>
+			</li>
+			<li>
+				<img src="" alt="">
+				<span></span>
+				<a href="#"></a>
+			</li>
+		</ul>
+	</div> -->
+
+
 	<script>
 
 		this.on('mount',function(){
-			console.log("gg");
+			console.log("home");
 		})
 	</script>
 </home>

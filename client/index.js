@@ -9,6 +9,7 @@ require('./scss/main.scss');
 //script
 require('./app/app.tag');
 require('./app/home/home.tag');
+require('./app/top-nav/top-nav.tag');
 require('./app/main-nav/main-nav.tag');
 
 //img 
@@ -17,6 +18,9 @@ require('./img/cart-icon.png');
 require('./img/logodropshadow.png');
 require('./img/newCollection.png');
 require('./img/pinkbg.png');
+require('./img/mouse.png');
+require('./img/direction.png');
+require('./img/IMG_7353.png');
 
 var reducer = function(state={title:[]},action){
 	console.log(action);

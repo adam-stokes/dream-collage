@@ -1,0 +1,40 @@
+$top-nav-height:42px;
+
+.top-nav{
+	height: $top-nav-height;
+	width: 100%;
+	background: url("../img/top-nav.png");
+	line-height: 42px;
+	color : white;
+	.someText{
+		margin-left: 8px;
+		display: inline-block;
+			vertical-align: middle;
+			line-height: normal;
+		
+		 font-size: 15.584px;
+	}
+
+	.cart{
+		float:right;
+		li{
+			font-size: 6.8px;
+			float: left;
+			&.cart-icon{
+				margin: 0px;
+				padding: 0px;
+			}
+			img{
+				vertical-align: middle;
+				height: 50%;
+				width: 50%;
+			}
+			margin-left: 5px;
+			margin-right: 5px;
+			&.last{
+				margin-right: 20px;
+			}
+		}
+		
+	}
+}

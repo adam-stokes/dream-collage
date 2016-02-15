@@ -1,44 +1,7 @@
 $top-nav-height:42px;
 
 home{
-	.top-nav{
-		height: $top-nav-height;
-		width: 100%;
-		background: url("../img/top-nav.png");
-		line-height: 42px;
-		color : white;
-		.someText{
-			margin-left: 8px;
-			display: inline-block;
-  			vertical-align: middle;
-  			line-height: normal;
-			
-			 font-size: 15.584px;
-		}
-
-		.cart{
-			float:right;
-			li{
-				font-size: 6.8px;
-				float: left;
-				&.cart-icon{
-					margin: 0px;
-					padding: 0px;
-				}
-				img{
-					vertical-align: middle;
-					height: 50%;
-					width: 50%;
-				}
-				margin-left: 5px;
-				margin-right: 5px;
-				&.last{
-					margin-right: 20px;
-				}
-			}
-			
-		}
-	}
+	
 	
 
 	.main-header{
@@ -56,12 +19,12 @@ home{
 			text-align: center;
 			ul{
 				display: inline-block;
-				
+				width: 90%;
 
 				.line{
 					float: left;
 					width: 2px;
-					height: 40px;
+					height: 20px;
 					margin-top: 55px;
 					background-color: white;
 				}
@@ -72,6 +35,7 @@ home{
 					text-shadow:5px 5px 10px black;
 					float: left;
 					// display:inline-block;
+					width: 20%;
 					&.logo{
 						margin-top: 17px;
 						width: 148px;
@@ -85,8 +49,8 @@ home{
 					&.page-link{
 						
 						margin-top: 65px;
-						margin-right: 20px;
-						margin-left: 20px;
+						// margin-right: 20px;
+						// margin-left: 20px;
 						
 					}
 				}
@@ -168,6 +132,7 @@ home{
 			width: 447px;
 			margin:auto;
 			margin-top: 25px;
+			position: relative;
 			input{
 				width: 365px;
 				height: 16px;
@@ -182,7 +147,25 @@ home{
 				font-size: 12.45px;
 				padding: 2px;
 			}
+			.hand{
+				width: 100%;
+				height: 50px;
+				position: absolute;
+				left: 90%;
+				img{
+					float: left;
+					height: 100%;
+					width: 55px;
+				}
+				span{
+					padding-top: 30px;
+					float: left;
+					font-size: 9.63px;
+				}
+			}
 		}
+
+
 	}
 
 	.new-collection{
@@ -240,6 +223,56 @@ home{
 				background: url(../img/newCollection.png) no-repeat;
 				background-size: cover;
 			}
+		}
+	}
+
+	.store1{
+		width: 100%;
+		height: 478px;
+		position: relative;
+		.direction{
+			position: absolute;
+			z-index: 10;
+			margin-top: 20%;
+			right: 0px;
+		} 
+		.torn{
+			position: absolute;
+			width: 80%;
+			height: 100%;
+			background: url(../img/001.png);
+			background-size: cover;
+			z-index: 5;
+			display: none;
+		}
+		ul.clothes{
+			position: absolute;
+			width: 590px;
+			height: 390px;
+			top: 0; left: 0; bottom: 0; right: 0;
+			background-color: red;
+			// padding-top: 5%;
+			li{
+				float: left;
+				img{
+					width: 180px;
+					height: 270px;
+				}
+			}
+		}
+	}
+
+	.store2{
+		width: 100;
+		height: 478px;
+		position: relative;
+		.torn{
+			width: 100%;
+			height: 100%;
+			background: url(../img/001.png);
+			background-size: cover;
+			transform: scaleX(-1);
+			z-index: 5;
 		}
 	}
 }
