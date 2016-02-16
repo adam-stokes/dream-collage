@@ -53,17 +53,14 @@
 	</header>
 
 
-	<div class="new-collection">
+	<!-- <div class="new-collection">
 		<div class="text-box">
-			<!-- <img src="img/pinkbg.png" alt=""> -->
 			<span class="title-text">2016</span>
 			<span class="main-text">the new collection has arrived</span>
 			<span class="sub-text">you should really visit our</span>
 			<a href="#" class="button">view</a>
 		</div>		
-		<div class="image-box">
-			<!-- <img src="img/newCollection.png" alt=""> -->
-		</div>
+		<div class="image-box"></div>
 	</div>
 
 	<div class="store">
@@ -114,6 +111,61 @@
 				<a class="button" href="#">view</a>
 			</li>
 		</ul>
+	</div> -->
+	
+	<div class="main-footer">
+		<img class="footer-logo col-3" src="img/logo.png" alt="">
+		<ul class="col-3 footer-menu">
+			<li>
+				<a href="#">
+					<img src="img/Next-48.png" alt="">
+					<span>about us</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/Next-48.png" alt="">
+					<span>ready to collage</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/Next-48.png" alt="">
+					<span>contact us</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="col-3 get-in-touch">
+			<span class="title">get in touch</span>
+			<li class="house">
+				<img src="img/homeicon.png" alt="">
+				<span>Bkk,Thailand</span>
+			</li>
+			<li class="tel">
+				<img src="img/phone.png" alt="">
+				<span>+66929544471</span>
+			</li>
+			<li class="mail">
+				<img src="img/mailicon.png" alt="">
+				<span>Hello@dreamcollage.com</span>
+			</li>
+			<div class="social">
+				<img src="img/facebook.png" alt="">
+				<img src="img/ig.png" alt="">
+			</div>
+		</ul>
+		<form class="col-3 contact-us">
+			<span>contact us</span>
+			<div class="small">
+				<input class="small-box" type="text" placeholder="NAME">
+				<input class="small-box" type="text" placeholder="E-MAIL">
+				<input class="small-box" type="text">
+			</div>
+			<input class="big-box" type="text" placeholder="MESSAGE">
+			<button class="button">send</button>
+		</form>
+
+
 	</div>
 
 

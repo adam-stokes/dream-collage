@@ -20,7 +20,13 @@ require('./img/newCollection.png');
 require('./img/pinkbg.png');
 require('./img/mouse.png');
 require('./img/direction.png');
+require('./img/direction2.png');
 require('./img/IMG_7353.png');
+require('./img/IMG_7411.png');
+require('./img/IMG_7463.png');
+require('./img/logo.png');
+require('./img/Next-48.png');
+
 
 var reducer = function(state={title:[]},action){
 	console.log(action);
