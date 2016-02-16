@@ -12,6 +12,6 @@
 	<script>
 		this.on('mount',function(){
 			console.log("top-nav");
-		})
+		});
 	</script>	
 </top-nav>

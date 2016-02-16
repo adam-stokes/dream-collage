@@ -3,19 +3,7 @@
 	
 
 	<header class="main-header">
-		<nav class="main-nav">
-			<ul>
-				<li class="page-link"><a href="#">home</a></li>
-				<div class="line"></div>
-				<li class="page-link"><a href="#">about us</a></li>
-				<div class="line"></div>
-				<li class="logo"><a href="#"><img src="img/logodropshadow.png" alt=""></a></li>
-				<div class="line"></div>
-				<li class="page-link"><a href="#">ready to collage</a></li>
-				<div class="line"></div>
-				<li class="page-link"><a href="#">contact us</a></li>
-			</ul>
-		</nav>
+		<main-nav></main-nav>
 
 		<div class="main-banner">
 			<main>
@@ -78,55 +66,66 @@
 		</div>
 	</div>
 
-	<div class="store1">
+	<div class="store">
 		<div class="torn"></div>
-		<img class="direction" src="img/direction.png" alt="">
+		<img onclick={slideTorn.bind(this,".torn")} class="direction" src="img/direction.png" alt="">
 		<ul class="clothes">
-			<li>
+			<li class="col-4">
 				<img src="img/IMG_7353.png" alt="">
-				<span></span>
-				<a href="#"></a>
+				<span class="clothes-name">Striped Dress</span>
+				<span class="clothes-price">2150 bht</span>
+				<a class="button" href="#">view</a>
 			</li>
-			<li>
-				<img src="img/IMG_7353.png" alt="">
-				<span></span>
-				<a href="#"></a>
+			<li class="col-4">
+				<img src="img/IMG_7411.png" alt="">
+				<span class="clothes-name">Translent - Oldrose</span>
+				<span class="clothes-price">2150 bht</span>
+				<a class="button" href="#">view</a>
 			</li>
-			<li>
-				<img src="img/IMG_7353.png" alt="">
-				<span></span>
-				<a href="#"></a>
+			<li class="col-4">
+				<img src="img/IMG_7463.png" alt="">
+				<span class="clothes-name">Blue & white Collage Crop top</span>
+				<span class="clothes-price">1200 bht</span>
+				<a class="button" href="#">view</a>
 			</li>
 		</ul>
 	</div>
 
-<!-- 	<div class="store2">
-		<div class="torn" src="img/001.png" alt=""></div>
-		<img class="direction" src="" alt="">
+	<div class="store">
+		<div class="torn2"></div>
+		<img onclick={slideTorn.bind(this,".torn2")} class="direction2" src="img/direction2.png" alt="">
 		<ul class="clothes">
-			<li>
-				<img src="" alt="">
-				<span></span>
-				<a href="#"></a>
+			<li class="col-4">
+				<img src="img/IMG_7353.png" alt="">
+				<span class="clothes-name">Striped Dress</span>
+				<span class="clothes-price">2150 bht</span>
+				<a class="button" href="#">view</a>
 			</li>
-			<li>
-				<img src="" alt="">
-				<span></span>
-				<a href="#"></a>
+			<li class="col-4">
+				<img src="img/IMG_7411.png" alt="">
+				<span class="clothes-name">Translent - Oldrose</span>
+				<span class="clothes-price">2150 bht</span>
+				<a class="button" href="#">view</a>
 			</li>
-			<li>
-				<img src="" alt="">
-				<span></span>
-				<a href="#"></a>
+			<li class="col-4">
+				<img src="img/IMG_7463.png" alt="">
+				<span class="clothes-name">Blue & white Collage Crop top</span>
+				<span class="clothes-price">1200 bht</span>
+				<a class="button" href="#">view</a>
 			</li>
 		</ul>
-	</div> -->
+	</div>
 
 
 	<script>
-
+		var $ =	require('jquery');
 		this.on('mount',function(){
 			console.log("home");
-		})
+
+		});
+
+		slideTorn(torn){
+			$(torn).toggleClass( "slide" );
+		}
 	</script>
 </home>

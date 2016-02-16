@@ -11,50 +11,10 @@ home{
 		background-repeat: no-repeat;
 		display:block;
   		background-size: cover;
-		
-		background-color: red;
 		.main-nav{
 			width: 100%;
 			color:white;
 			text-align: center;
-			ul{
-				display: inline-block;
-				width: 90%;
-
-				.line{
-					float: left;
-					width: 2px;
-					height: 20px;
-					margin-top: 55px;
-					background-color: white;
-				}
-				// padding-top: 25.3px;
-				li{
-					font-size : 10px;
-					text-transform: uppercase;
-					text-shadow:5px 5px 10px black;
-					float: left;
-					// display:inline-block;
-					width: 20%;
-					&.logo{
-						margin-top: 17px;
-						width: 148px;
-						height: 132px;
-						img{
-							width: 100%;
-							height: 100%;
-						}
-					}
-
-					&.page-link{
-						
-						margin-top: 65px;
-						// margin-right: 20px;
-						// margin-left: 20px;
-						
-					}
-				}
-			}
 		}
 	
 		.main-banner{
@@ -172,7 +132,6 @@ home{
 		position: relative;
 		width: 100%;
 		height: 385px;
-		background-color: blue;
 		div{
 			position: absolute;
 			&.text-box{
@@ -226,14 +185,17 @@ home{
 		}
 	}
 
-	.store1{
+	.store{
+		overflow-y: hidden;
 		width: 100%;
 		height: 478px;
 		position: relative;
+		text-align: center;
 		.direction{
+			cursor: pointer;
 			position: absolute;
 			z-index: 10;
-			margin-top: 20%;
+			margin-top: 170px;
 			right: 0px;
 		} 
 		.torn{
@@ -243,36 +205,62 @@ home{
 			background: url(../img/001.png);
 			background-size: cover;
 			z-index: 5;
-			display: none;
+			transition:1s ease;
+
+			&.slide{
+				margin-left: -70%;
+			}
+		}
+		.direction2{
+			cursor: pointer;
+			position: absolute;
+			z-index: 10;
+			margin-top: 170px;
+			left: 0px;
+		} 
+		.torn2{
+			position: absolute;
+			width: 80%;
+			margin-left: 20%;
+			height: 100%;
+			background: url(../img/002.png);
+			background-size: cover;
+			z-index: 5;
+			transition:1s ease;
+			&.slide{
+				margin-left: 90%;
+			}
 		}
 		ul.clothes{
-			position: absolute;
-			width: 590px;
-			height: 390px;
-			top: 0; left: 0; bottom: 0; right: 0;
-			background-color: red;
-			// padding-top: 5%;
+			display: inline-block;
+			margin-top: 70px;
+			width: 80%;
 			li{
 				float: left;
 				img{
-					width: 180px;
-					height: 270px;
+					width: 185px;
+					height: 275px;
+					
+				}
+				.clothes-name{
+					margin-top: 10px;
+					font-size: 13.33px;
+					display: block;
+				}
+				.clothes-price{
+					font-size: 13.33px;
+					display: block;
+					margin-bottom:10px; 
+				}
+				.button{
+					margin:auto;
+					text-transform: uppercase;
+					border-style: solid;
+    				border-width: 1px;
 				}
 			}
 		}
 	}
 
-	.store2{
-		width: 100;
-		height: 478px;
-		position: relative;
-		.torn{
-			width: 100%;
-			height: 100%;
-			background: url(../img/001.png);
-			background-size: cover;
-			transform: scaleX(-1);
-			z-index: 5;
-		}
-	}
+	
 }
